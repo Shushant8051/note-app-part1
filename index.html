@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+
+    <link rel="stylesheet" href="styls.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Your Privacy In Your Hand</h1>
+            <hr>
+            <form action="">
+                <input class="notetextfield" type="text" id="note-title" placeholder="Title">
+                <textarea class="notetextfield" id="note-text" placeholder="Your Note"></textarea>
+
+                <button id="add-btn">Add Note</button>
+            </form>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Your Notes</h2>
+            <hr>
+            <div id="notes">
+
+
+
+
+                <div class="note">
+                    <p class="note-counter">Note ${y + 1}</p>
+                    <h3 class="note-title"> ${x.title} </h3>
+                    <p class="note-text"> ${x.text}</p>
+
+                    <button id="note-btn" onclick="deleteNote(this.id)" class="note-btn"> Delete Note</button>
+                    <button id=" edit-btn" onclick="editNote(this.id)" class="note-btn edit-btn">Edit Note </button>
+
+                    <div class="notes__small-updated">${x.date}</div>
+
+
+
+                </div>
+
+                <!-- <div class="note">
+                    <p class="note-counter">Note ${index + 1}</p>
+                    <h3 class="note-title"> $element.title </h3>
+                    <p class="note-text"> $element.text</p>
+                    <p><span id="date">$Date</span></p>
+                    <button class="note-btn">Delete Note</button>
+
+                    <button class=" edit-btn">Edit Note</button>
+                    <h6 class="date">30 March 2022 </h6>
+                </div> -->
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
